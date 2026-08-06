@@ -8,6 +8,7 @@
   <meta property="og:title" content="Tony Barletta Jr.">
   <meta property="og:description" content="Licensed mortgage loan officer — NMLS #18717">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://tonybarlettajr.com/assets/headshot.png">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>TB</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
   <main class="page">
     <section class="hero">
       <div class="hero__content">
-        <img class="hero__photo" src="/assets/headshot.png" alt="Tony Barletta Jr." width="150" height="215">
+        <img class="hero__photo" src="/assets/headshot.png" alt="Tony Barletta Jr." width="449" height="449">
         <div class="hero__intro">
           <p class="hero__eyebrow">NMLS #18717</p>
           <h1>Tony Barletta Jr.</h1>
@@ -37,7 +38,39 @@
         <li><span>4</span> Track underwriting and appraisal progress</li>
         <li><span>5</span> Close on your new home or refinance</li>
       </ol>
-      <a class="button" href="mailto:tony@tonybarlettajr.com?subject=Mortgage%20Inquiry">Get Started</a>
+      <a class="button" href="#inquiry">Get Started</a>
+    </section>
+
+    <section class="card inquiry" id="inquiry">
+      <h2>Send an Inquiry</h2>
+      <p class="inquiry__intro">Have a question about buying or refinancing? Send a message and Tony will get back to you.</p>
+      <form class="inquiry-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="a362ab79-9052-4af8-9526-632749ceeabe">
+        <input type="hidden" name="subject" value="New inquiry from tonybarlettajr.com">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone <span class="optional">(optional)</span></label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button class="button" type="submit">Send Inquiry</button>
+      </form>
     </section>
 
     <section class="grid">
