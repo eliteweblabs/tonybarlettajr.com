@@ -4,115 +4,276 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tony Barletta Jr. | Loan Officer</title>
-  <meta name="description" content="Work with Tony Barletta Jr., NMLS #2359485. Licensed mortgage loan officer at Movement Mortgage serving clients across 22 states.">
+  <meta name="description" content="Tony Barletta Jr., NMLS #2359485. Licensed mortgage loan officer at Movement Mortgage serving clients across 22 states.">
   <meta property="og:title" content="Tony Barletta Jr.">
   <meta property="og:description" content="Licensed mortgage loan officer at Movement Mortgage — NMLS #2359485">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://tonybarlettajr.com/assets/headshot.png">
+  <meta property="og:image" content="https://tonybarlettajr.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:url" content="https://tonybarlettajr.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tony Barletta Jr.">
+  <meta name="twitter:description" content="Licensed mortgage loan officer at Movement Mortgage — NMLS #2359485">
+  <meta name="twitter:image" content="https://tonybarlettajr.com/assets/og-image.jpg">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>TB</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <main class="page">
+  <header class="site-header">
+    <a class="signature" href="#top">Tony Barletta Jr.</a>
+    <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
+    <nav class="nav">
+      <a href="#numbers">By the Numbers</a>
+      <a href="#properties">Properties</a>
+      <a href="#map-search">Search</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-phone" href="tel:+17812230845">781-223-0845</a>
+  </header>
+
+  <main id="top">
     <section class="hero">
-      <div class="hero__content">
-        <img class="hero__photo" src="/assets/headshot.png" alt="Tony Barletta Jr." width="449" height="449">
-        <div class="hero__intro">
-          <p class="hero__eyebrow">NMLS #2359485</p>
-          <h1>Tony Barletta Jr.</h1>
-          <p class="hero__title">Loan Officer — Movement Mortgage</p>
-          <p class="hero__tagline">Guiding homebuyers and refinancers through the mortgage process with clear, personal service.</p>
+      <div class="hero__inner">
+        <p class="eyebrow">NMLS #2359485 · Movement Mortgage</p>
+        <h1>Guidance you can close on.</h1>
+        <p>Two decades of mortgage work, built on referrals. Tony helps first-time buyers, repeat clients, and investors through conventional loans, refinances, and more complicated construction and remodeling scenarios.</p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" data-cal-link href="https://cal.com/tonybarlettajr">Schedule</a>
+          <a class="btn btn--ghost" href="/assets/tony-barletta-jr.vcf" download>Add to Contacts</a>
+          <a class="btn btn--ghost" href="#contact">Send an Inquiry</a>
         </div>
       </div>
     </section>
 
-    <section class="steps card">
-      <h2>Your mortgage application in 5 simple steps</h2>
-      <ol class="steps__list">
-        <li><span>1</span> Connect with Tony to discuss your goals</li>
-        <li><span>2</span> Review loan options and get pre-approved</li>
-        <li><span>3</span> Submit your application and documentation</li>
-        <li><span>4</span> Track underwriting and appraisal progress</li>
-        <li><span>5</span> Close on your new home or refinance</li>
-      </ol>
-      <a class="button" href="#inquiry">Get Started</a>
+    <section class="numbers" id="numbers">
+      <div class="wrap">
+        <p class="eyebrow">By the Numbers</p>
+        <div class="section-head">
+          <h2>A referral business, measured in closings.</h2>
+          <p>Placeholder production figures for layout. Swap these for Tony’s actual volume when ready.</p>
+        </div>
+        <div class="numbers-grid">
+          <article class="stat"><strong>20+</strong><span>Years in lending</span></article>
+          <article class="stat"><strong>$847M</strong><span>Sample funded volume</span></article>
+          <article class="stat"><strong>1,240</strong><span>Sample families helped</span></article>
+          <article class="stat"><strong>4.96</strong><span>Public review average</span></article>
+          <article class="stat"><strong>93</strong><span>Published client reviews</span></article>
+          <article class="stat"><strong>22</strong><span>Licensed states</span></article>
+          <article class="stat"><strong>18</strong><span>Sample avg. days to close</span></article>
+          <article class="stat"><strong>92%</strong><span>Sample repeat / referral share</span></article>
+        </div>
+      </div>
     </section>
 
-    <section class="card inquiry" id="inquiry">
-      <h2>Send an Inquiry</h2>
-      <p class="inquiry__intro">Have a question about buying or refinancing? Send a message and Tony will get back to you.</p>
-      <form class="inquiry-form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="a362ab79-9052-4af8-9526-632749ceeabe">
-        <input type="hidden" name="subject" value="New inquiry from tonybarlettajr.com">
-        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
-
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required autocomplete="name">
+    <section id="properties">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Featured Properties</p>
+          <h2>Sample homes across the North Shore and South Coast.</h2>
+          <p class="note">Dummy listings for design only — not active inventory.</p>
         </div>
-
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required autocomplete="email">
-        </div>
-
-        <div class="form-row">
-          <label for="phone">Phone <span class="optional">(optional)</span></label>
-          <input type="tel" id="phone" name="phone" autocomplete="tel">
-        </div>
-
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <button class="button" type="submit">Send Inquiry</button>
-      </form>
+        <div class="property-grid" id="featured-grid"></div>
+      </div>
     </section>
 
-    <section class="grid">
-      <article class="card">
-        <h2>Contact</h2>
-        <ul class="contact-list">
-          <li>
-            <strong>Phone</strong>
-            <a href="tel:+17812230845">781-223-0845</a>
-          </li>
-          <li>
-            <strong>Email</strong>
-            <a href="mailto:tony@tonybarlettajr.com">tony@tonybarlettajr.com</a>
-          </li>
-          <li>
-            <strong>Office</strong>
-            <address>
-              128 Union Street, Suite 101<br>
-              New Bedford, MA 02740
-            </address>
-          </li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h2>Licensed States</h2>
-        <p class="states">
-          AL, CO, FL, IA, KS, MA, MN, MO, MS, NC, NH, NV, OH, OK, PA, SD, TX, UT, VA, WA, WV, WI
+    <section class="map-section" id="map-search">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Search</p>
+          <h2>Filter by price, schools, year built, and more.</h2>
+          <p class="note">Sample listings on a live Mapbox map. Filters update pins and the list together.</p>
+        </div>
+        <div class="filters">
+          <label>
+            Price
+            <select id="filter-price" data-filter="price">
+              <option value="any">Any price</option>
+              <option value="under-800">Under $800k</option>
+              <option value="800-1500">$800k – $1.5M</option>
+              <option value="over-1500">Over $1.5M</option>
+            </select>
+          </label>
+          <label>
+            School district
+            <select id="filter-district" data-filter="district">
+              <option value="any">Any district</option>
+            </select>
+          </label>
+          <label>
+            Year built
+            <select id="filter-year" data-filter="year">
+              <option value="any">Any year</option>
+              <option value="pre-1950">Before 1950</option>
+              <option value="1950-1999">1950 – 1999</option>
+              <option value="2000-plus">2000 and newer</option>
+            </select>
+          </label>
+          <label>
+            Property type
+            <select id="filter-type" data-filter="type">
+              <option value="any">Any type</option>
+            </select>
+          </label>
+          <label>
+            Bedrooms
+            <select id="filter-beds" data-filter="beds">
+              <option value="any">Any beds</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+              <option value="5">5+</option>
+            </select>
+          </label>
+        </div>
+        <p class="cta-row">
+          <button class="btn btn--outline" id="reset-filters" type="button">Reset filters</button>
+          <span class="note" id="result-count"></span>
         </p>
-        <p class="fine-print">
-          NMLS Consumer Access:
-          <a href="https://www.nmlsconsumeraccess.org/" target="_blank" rel="noopener noreferrer">nmlsconsumeraccess.org</a>
-        </p>
-      </article>
+        <div class="map-layout">
+          <div id="map"></div>
+          <div class="results" id="map-results"></div>
+        </div>
+      </div>
     </section>
 
-    <footer class="footer">
-      <p>&copy; <span id="year"></span> Tony Barletta Jr. NMLS #2359485 | Movement Mortgage</p>
-    </footer>
+    <section class="reviews" id="reviews">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Reviews</p>
+          <h2>Clients come back — and send their families.</h2>
+          <p>Selected from public reviews. Tony holds a 4.96 rating across 93 published comments, with a business he describes as built on referrals.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review">
+            <p class="stars">★★★★★</p>
+            <blockquote>“I can say for a 100% certainty that I would not have purchased my first home as of now if it wasn’t for Tony. He helped me every step of the way — not only getting approved, but finding the best programs I could qualify for.”</blockquote>
+            <cite>Ilana · Pembroke, MA</cite>
+          </article>
+          <article class="review">
+            <p class="stars">★★★★★</p>
+            <blockquote>“Working with Tony was a great experience again — third house purchased with Tony. Customer service was exemplary. They made the process easy.”</blockquote>
+            <cite>Repeat client · Manchester, NH</cite>
+          </article>
+          <article class="review">
+            <p class="stars">★★★★★</p>
+            <blockquote>“I was 15–20 days outside of closing and being failed by another lender. Tony came in and literally saved us from losing the house.”</blockquote>
+            <cite>Client · Nashua, NH</cite>
+          </article>
+          <article class="review">
+            <p class="stars">★★★★★</p>
+            <blockquote>“Tony was able to help my mom refinance after four different banks said no. The sound of relief in her voice was a testament to the kind of person he is.”</blockquote>
+            <cite>Public client review</cite>
+          </article>
+          <article class="review">
+            <p class="stars">★★★★★</p>
+            <blockquote>“Because of Tony and his team, I felt completely confident throughout buying my first home. Transparent, easy to reach, patient, and diligent.”</blockquote>
+            <cite>Chantel · Salem, MA</cite>
+          </article>
+          <article class="review">
+            <p class="stars">★★★★★</p>
+            <blockquote>“He gave us many options and some creative ways to make things fit the budget. Honest, factual information — always available, even for the simplest questions.”</blockquote>
+            <cite>Martha Ferratusco · LinkedIn recommendation</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about">
+        <img src="/assets/headshot.png" alt="Tony Barletta Jr." width="449" height="449">
+        <div>
+          <p class="eyebrow">About Tony</p>
+          <h2>Clear advice. Complicated files. Repeat business.</h2>
+          <p>Tony Barletta Jr. is a licensed mortgage loan originator, NMLS #2359485, at Movement Mortgage, serving clients from Massachusetts with licenses in 22 states. Public profiles describe two decades in the business, including branch leadership, and a practice built on referrals through both high and low points in the market.</p>
+          <p>He is well versed in traditional financing and in construction and remodeling scenarios, and he pairs that with personal experience as a real estate investor. Clients consistently mention the same things: he explains the numbers in plain language, answers nights and weekends, walks people through the tech, and stays until the house is actually closed.</p>
+          <ul class="highlights">
+            <li>Licensed loan originator at Movement Mortgage, NMLS #2359485</li>
+            <li>4.96-star public rating from 93 reviews</li>
+            <li>First-time buyers, refinances, and repeat purchase clients</li>
+            <li>Construction, remodeling, and non-simple credit files</li>
+            <li>North Shore roots, New Bedford office, licensed nationwide in 22 states</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn btn--gold" data-cal-link href="https://cal.com/tonybarlettajr">Schedule a Call</a>
+            <a class="btn btn--outline" href="/assets/tony-barletta-jr.vcf" download>Add to Contacts</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact-split">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Start with a conversation.</h2>
+          <p>Call, email, save Tony’s card, or book time. For a written question, use the form — it goes to <a href="mailto:tony@tonybarlettajr.com">tony@tonybarlettajr.com</a>.</p>
+          <ul class="contact-list">
+            <li>
+              <strong>Phone</strong>
+              <a href="tel:+17812230845">781-223-0845</a>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:tony@tonybarlettajr.com">tony@tonybarlettajr.com</a>
+            </li>
+            <li>
+              <strong>Office</strong>
+              <address>128 Union Street, Suite 101<br>New Bedford, MA 02740</address>
+            </li>
+            <li>
+              <strong>NMLS</strong>
+              #2359485 · <a href="https://www.nmlsconsumeraccess.org/" target="_blank" rel="noopener noreferrer">nmlsconsumeraccess.org</a>
+            </li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn btn--gold" data-cal-link href="https://cal.com/tonybarlettajr">Schedule</a>
+            <a class="btn btn--outline" href="/assets/tony-barletta-jr.vcf" download>Add to Contacts</a>
+          </div>
+          <p class="licensed-states"><strong>Licensed states:</strong> AL, CO, FL, IA, KS, MA, MN, MO, MS, NC, NH, NV, OH, OK, PA, SD, TX, UT, VA, WA, WV, WI</p>
+        </div>
+
+        <form class="inquiry-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="a362ab79-9052-4af8-9526-632749ceeabe">
+          <input type="hidden" name="subject" value="New inquiry from tonybarlettajr.com">
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+          <label>
+            Name
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" autocomplete="tel">
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn btn--gold" type="submit">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
   </main>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Tony Barletta Jr. NMLS #2359485 | Movement Mortgage · tony@tonybarlettajr.com</p>
+    <p>Equal Housing Lender. Dummy listing and production figures are placeholders.</p>
+  </footer>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+  <script src="/js/config.js"></script>
+  <script src="/js/properties.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 </html>
